@@ -1,4 +1,4 @@
-export function handleResponseFromAPI(promise) {
+export default function handleResponseFromAPI(promise) {
   promise
     .then((response) => {
       console.log('Got a response from the API');
@@ -9,4 +9,3 @@ export function handleResponseFromAPI(promise) {
       return new Error();
     });
 }
-
